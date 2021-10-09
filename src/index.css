@@ -47,7 +47,8 @@ body {
   padding: 0.5rem;
 }
 
-.form input:focus {
+.form input:focus,
+.form input:active {
   background-color: rgb(1, 45, 65);
   color: #fff;
 }

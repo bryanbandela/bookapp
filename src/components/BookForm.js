@@ -5,6 +5,7 @@ import BookDetails from './BookDetails';
 
 function BookForm() {
   const { books, dispatch } = useContext(BookContext);
+  console.log(books);
   const [author, setAuthor] = useState('');
   const [book, setBook] = useState('');
 
@@ -35,12 +36,14 @@ function BookForm() {
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
           placeholder="Author's name"
+          autoComplete="off"
         ></input>
         <input
           name="book"
           value={book}
           onChange={(e) => setBook(e.target.value)}
           placeholder="Book"
+          autoComplete="off"
         ></input>
         <button>Add book</button>
       </form>
